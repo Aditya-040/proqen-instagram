@@ -6,14 +6,17 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 
 const API = "https://graph.instagram.com/v23.0";
-const USER = process.env.IG_USER_ID;
-let TOKEN = process.env.IG_ACCESS_TOKEN;
+const clean = (v) => (v || "").trim().replace(/^["']|["']$/g, "").trim();
+const USER = clean(process.env.IG_USER_ID);
+let TOKEN = clean(process.env.IG_ACCESS_TOKEN);
 const REPO = process.env.GITHUB_REPOSITORY; // owner/name
 const BRANCH = process.env.GITHUB_REF_NAME || "main";
 const FORCE = process.env.FORCE === "true";
 const DRY = process.env.DRY_RUN === "true";
 
 if (!USER || !TOKEN) fail("Missing IG_USER_ID or IG_ACCESS_TOKEN secret.");
+console.log(`Token looks like: starts with "${TOKEN.slice(0, 4)}…", ${TOKEN.length} characters. User ID has ${USER.length} digits.`);
+if (TOKEN.startsWith("EAA")) fail("IG_ACCESS_TOKEN is a Facebook token (starts with EAA). Generate the token under Instagram API > 'API setup with Instagram login' > 'Generate access tokens' instead; that one starts with IG.");
 
 const manifest = JSON.parse(readFileSync("queue/manifest.json", "utf8"));
 const state = JSON.parse(readFileSync("state/posted.json", "utf8"));
