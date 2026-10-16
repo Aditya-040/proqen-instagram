@@ -1,0 +1,76 @@
+[
+  {
+    "id": "p001",
+    "slides": [
+      {"layout": "cover", "kicker": "For restaurant & café owners", "title": "5 signs your restaurant has *outgrown* paper KOTs", "sub": "If 2 or more sound familiar, you're losing money every service."},
+      {"layout": "point", "num": "01", "title": "Orders get lost between table and kitchen", "body": "A torn slip or a misheard order means a remade dish, a waiting table and a bad review.", "tip": "Orders go straight from POS to a kitchen screen."},
+      {"layout": "point", "num": "02", "title": "Billing takes longer than eating", "body": "Adding items by hand, calculating GST and fixing mistakes at the counter slows every table turn.", "tip": "One tap bill with GST, split and UPI built in."},
+      {"layout": "point", "num": "03", "title": "You can't tell which dish actually makes money", "body": "Without item-wise sales data, menu decisions are guesswork.", "tip": "Daily reports: top items, peak hours, slow movers."},
+      {"layout": "point", "num": "04", "title": "Stock runs out in the middle of rush hour", "body": "Nobody noticed the paneer was low until a customer ordered it.", "tip": "Low-stock alerts before you run out."},
+      {"layout": "point", "num": "05", "title": "You have to be there for things to run", "body": "Cash, orders and staff only make sense when the owner is at the counter.", "tip": "See live sales from your phone, anywhere."},
+      {"layout": "cta", "title": "Ready to *upgrade* your counter?", "sub": "ProQen builds restaurant POS that works offline, prints KOTs and sends orders to the kitchen."}
+    ],
+    "caption": "Paper KOTs worked when you had 5 tables. Do any of these sound like your restaurant? 👇\n\n1️⃣ Orders lost between table and kitchen\n2️⃣ Slow billing at the counter\n3️⃣ No idea which dish makes money\n4️⃣ Stock runs out mid-rush\n5️⃣ Nothing runs unless you're there\n\nIf 2 or more sound familiar, it's time for a proper POS. ProQen builds restaurant POS & billing software that works offline, handles GST and sends orders straight to the kitchen.\n\n💬 Comment \"POS\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\nSave this & share it with a restaurant owner you know.\n\n#restaurantpos #restaurantbusiness #cafeowner #restaurantindia #billingsoftware #gstbilling #restaurantmanagement #smallbusinessindia #foodbusiness #kot #posystem #proqen"
+  },
+  {
+    "id": "p002",
+    "slides": [
+      {"layout": "sheet_vs", "kicker": "Be honest", "title": "Still running your business on *spreadsheets?*"}
+    ],
+    "caption": "orders_FINAL_v3 (2).xlsx 😅\n\nIf your business runs on spreadsheets, WhatsApp notes and memory, you're not alone. But at some point the sheet starts running you: wrong totals, missed dues, stock that never matches.\n\nWe build simple dashboards and ERP/CRM systems that put sales, dues, orders and stock in one place, with automatic reminders.\n\nWhich side are you on today? Left or right? Tell us in the comments 👇\n\n💬 WhatsApp +91 94531 26836\n🌐 proqen.com\n\n#erp #crm #businessdashboard #excel #smallbusinessindia #msme #businessautomation #inventorymanagement #customsoftware #startupindia #digitalindia #proqen"
+  },
+  {
+    "id": "p003",
+    "slides": [
+      {"layout": "cover", "kicker": "Software timelines", "title": "How long does custom software *really* take?", "sub": "Realistic timelines for the 4 things businesses ask us for most."},
+      {"layout": "point", "num": "2–4", "title": "weeks · Business website", "body": "Company site that loads fast, works on mobile and is ready for Google.", "tip_label": "Good for →", "tip": "Getting found online and getting enquiries."},
+      {"layout": "point", "num": "6–12", "title": "weeks · Web or mobile app", "body": "Customer apps, booking apps, portals and online stores with login and payments.", "tip_label": "Good for →", "tip": "Selling, booking or serving customers digitally."},
+      {"layout": "point", "num": "4–8", "title": "weeks · POS & billing", "body": "Restaurant POS, shop billing, GST invoices and inventory that work offline.", "tip_label": "Good for →", "tip": "Faster counters and accurate stock."},
+      {"layout": "point", "num": "In phases", "title": "ERP, CRM & dashboards", "body": "Larger systems are delivered in parts, so your team starts using them early instead of waiting months.", "tip_label": "Good for →", "tip": "Replacing ten spreadsheets with one system."},
+      {"layout": "cta", "title": "Get a *fixed* quote and timeline", "sub": "Tell us what you need. We reply within one working day with a rough plan."}
+    ],
+    "caption": "\"How long will it take?\" is the first thing every business owner asks us. Here's the honest answer ⏱️\n\n🌐 Business website: 2–4 weeks\n📱 Web or mobile app: 6–12 weeks\n🧾 POS & billing: 4–8 weeks\n📊 ERP / CRM: delivered in phases\n\nEvery project gets a fixed quote with price and timeline before we start, so there are no surprises.\n\n💬 WhatsApp +91 94531 26836 to get yours\n🌐 proqen.com\n\nSave this for when you plan your next project 📌\n\n#customsoftware #appdevelopment #websitedevelopment #softwaredevelopment #mobileapp #erp #posystem #startupindia #smallbusinessindia #techforbusiness #noida #proqen"
+  },
+  {
+    "id": "p004",
+    "slides": [
+      {"layout": "pos", "kicker": "Restaurant POS", "title": "Bill a table in *seconds.*", "sub": "Even when the internet goes down.", "tags": ["Works offline", "GST invoices", "KOT printing", "UPI"],
+       "lines": [["Paneer Tikka", "240"], ["Butter Naan ×2", "80"], ["Dal Makhani", "220"], ["Lassi", "60"], ["GST 5%", "30"]], "total": "₹630"}
+    ],
+    "caption": "Rush hour. 12 tables. Internet just dropped. 😬\n\nWith a ProQen POS, billing keeps going. Bills, KOTs and GST invoices work offline and sync when you're back online.\n\n✅ One-tap billing with GST\n✅ KOT printing & kitchen display\n✅ UPI, cash & card\n✅ Item-wise sales reports\n\nBuilt for restaurants, cafés, cloud kitchens and shops in India.\n\n💬 Comment \"DEMO\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\n#restaurantpos #billingsoftware #gstinvoice #cafebusiness #cloudkitchen #restaurantowner #posystem #upi #smallbusinessindia #restauranttech #proqen"
+  },
+  {
+    "id": "p005",
+    "slides": [
+      {"layout": "cover", "kicker": "How we work", "title": "From idea to live software in *5 steps*", "sub": "No surprises, no disappearing developers."},
+      {"layout": "point", "num": "01", "title": "Discover", "body": "We learn how your business runs and agree on exactly what the software must do.", "tip_label": "Time →", "tip": "2–3 days"},
+      {"layout": "point", "num": "02", "title": "Design", "body": "You click through real screens and approve them before any code is written.", "tip_label": "Time →", "tip": "1–2 weeks"},
+      {"layout": "point", "num": "03", "title": "Build", "body": "We develop in short sprints and show you a working version every week.", "tip_label": "You get →", "tip": "Weekly demos"},
+      {"layout": "point", "num": "04", "title": "Test", "body": "Real devices, real data and your team using it until everything feels right.", "tip_label": "When →", "tip": "Before launch"},
+      {"layout": "point", "num": "05", "title": "Launch & support", "body": "We go live, train your staff and keep improving it as you grow. You own the full source code.", "tip_label": "After →", "tip": "Ongoing support plans"},
+      {"layout": "cta", "title": "Have an idea? *Let's build it.*", "sub": "Book a free consultation and get a rough plan within one working day."}
+    ],
+    "caption": "The #1 fear when hiring developers: \"What if they disappear halfway?\" 😅\n\nHere's exactly how we work at ProQen:\n\n01 Discover: 2–3 days\n02 Design: approve real screens before coding\n03 Build: working demo every week\n04 Test: on real devices with your team\n05 Launch & support: training + ongoing improvements\n\nAnd at launch, you own the full source code.\n\n💬 WhatsApp +91 94531 26836 for a free consultation\n🌐 proqen.com\n\n#softwaredevelopment #appdevelopment #customsoftware #webdevelopment #startupindia #techpartner #businessgrowth #digitaltransformation #noida #indianstartup #proqen"
+  },
+  {
+    "id": "p006",
+    "slides": [
+      {"layout": "chat", "kicker": "WhatsApp ordering", "title": "Your customers are already on WhatsApp. *Let them order there.*",
+       "chat": [["me", "Hi! Need 2 packs of Amul butter 500g"], ["them", "Added ✓ Total ₹560. Pay by UPI or cash on delivery?"], ["buttons", ["UPI", "Cash on delivery"]], ["me", "UPI"], ["them", "Payment received ✓ Your order will reach you by 6 PM 🛵"]],
+       "sub": "An order bot that takes orders, payments and updates 24×7, even while you sleep."}
+    ],
+    "caption": "No app download. No website. Just WhatsApp. 📲\n\nA WhatsApp order bot lets your customers browse, order and pay right inside the chat, 24×7. You get every order neatly in one dashboard.\n\nPerfect for kirana & retail stores, bakeries, restaurants and pharmacies.\n\nWant one for your business?\n💬 Comment \"BOT\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\n#whatsappbusiness #whatsappbot #chatbot #kiranastore #retailindia #onlineordering #businessautomation #aiautomation #smallbusinessindia #localbusiness #proqen"
+  },
+  {
+    "id": "p007",
+    "slides": [
+      {"layout": "cover", "kicker": "For hotels & homestays", "title": "4 things one *QR code* in every room can do", "sub": "Fewer calls to the front desk. Happier guests. More orders."},
+      {"layout": "point", "num": "01", "title": "Wi-Fi in one scan", "body": "No more guests calling reception for the password, or a laminated card that's always missing.", "tip_label": "Saves →", "tip": "Dozens of front-desk calls a day."},
+      {"layout": "point", "num": "02", "title": "Room service menu with photos", "body": "Guests browse food with photos and order from their phone. Orders go straight to the kitchen.", "tip_label": "Result →", "tip": "More room-service orders."},
+      {"layout": "point", "num": "03", "title": "Requests without a phone call", "body": "Extra towels, housekeeping, a late checkout: guests ask in one tap, staff see it instantly.", "tip_label": "Result →", "tip": "Faster service, nothing forgotten."},
+      {"layout": "point", "num": "04", "title": "Your local guide", "body": "Nearby places to eat and visit, checkout time and hotel rules, always up to date.", "tip_label": "Bonus →", "tip": "Update it anytime, no reprinting."},
+      {"layout": "cta", "title": "Get a QR guide for *your* property", "sub": "ProQen builds QR info codes, booking engines and front-desk apps for hotels."}
+    ],
+    "caption": "Your guests have their phones in hand all the time. Put your whole hotel in it 📱🏨\n\nOne QR code in every room can:\n1️⃣ Share Wi-Fi in one scan\n2️⃣ Show the room service menu with photos\n3️⃣ Take housekeeping & guest requests\n4️⃣ Work as a local guide\n\nLess load on the front desk, better reviews, more orders.\n\n💬 Comment \"HOTEL\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\nShare this with a hotel or homestay owner 🙌\n\n#hotelmanagement #hotelowner #homestay #hospitalityindustry #qrcode #hoteltech #guestexperience #hotelsofindia #roomservice #tourismindia #proqen"
+  }
+]
