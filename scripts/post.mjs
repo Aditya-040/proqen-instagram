@@ -19,7 +19,8 @@ const manifest = JSON.parse(readFileSync("queue/manifest.json", "utf8"));
 const state = JSON.parse(readFileSync("state/posted.json", "utf8"));
 const todayIST = new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10);
 
-function fail(msg) { console.error("❌ " + msg); process.exit(1); }
+function fail(msg) { console.log("::error title=Instagram post failed::" + msg.replace(/\n/g, " ")); process.exit(1); }
+function warn(msg) { console.log("::warning::" + msg); }
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const imgUrl = (p) => `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${p}`;
 
@@ -48,7 +49,7 @@ async function refreshToken() {
   // Long-lived Instagram tokens last 60 days; refresh once a week to keep them alive.
   const res = await fetch(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${TOKEN}`);
   const j = await res.json();
-  if (!j.access_token) { console.warn("⚠️ Token refresh failed:", JSON.stringify(j.error || j)); return; }
+  if (!j.access_token) { warn("Token refresh failed: " + JSON.stringify(j.error || j)); return; }
   console.log(`🔑 Token refreshed, valid ~${Math.round(j.expires_in / 86400)} more days.`);
   if (j.access_token !== TOKEN) {
     TOKEN = j.access_token;
@@ -57,7 +58,7 @@ async function refreshToken() {
         { env: { ...process.env, GH_TOKEN: process.env.GH_PAT }, stdio: "inherit" });
       console.log("🔑 Saved new token to repo secret.");
     } else {
-      console.warn("⚠️ Instagram issued a new token string but GH_PAT isn't set, so it can't be saved. Update IG_ACCESS_TOKEN manually within 60 days.");
+      warn("Instagram issued a new token string but GH_PAT isn't set, so it can't be saved. Update IG_ACCESS_TOKEN manually within 60 days.");
     }
   }
   state.lastRefresh = todayIST;
@@ -97,7 +98,7 @@ async function main() {
   state.posted.push({ id: post.id, media_id: pub.id, date: todayIST });
   state.lastDate = todayIST;
   save();
-  if (left < 3) console.warn(`⚠️ Only ${left} post(s) left in the queue.`);
+  if (left < 3) warn(`Only ${left} post(s) left in the queue.`);
 }
 
 function save() { writeFileSync("state/posted.json", JSON.stringify(state, null, 2) + "\n"); }
