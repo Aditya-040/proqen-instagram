@@ -2,7 +2,11 @@ name: Post to Instagram
 
 on:
   schedule:
-    - cron: "0 14 * * *" # 14:00 UTC = 7:30 PM IST, daily (GitHub may run it a few minutes late)
+    # GitHub often delays or skips scheduled runs at the top of the hour, so we use odd minutes
+    # plus two backup times. The script posts at most once per IST day, so backups never double-post.
+    - cron: "47 13 * * *" # 7:17 PM IST (main)
+    - cron: "33 14 * * *" # 8:03 PM IST (backup)
+    - cron: "19 15 * * *" # 8:49 PM IST (backup)
   workflow_dispatch:
     inputs:
       force:

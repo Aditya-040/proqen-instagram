@@ -1,6 +1,6 @@
 # ProQen Instagram auto-poster
 
-Posts one item a day to ProQen's Instagram (7:30 PM IST) via GitHub Actions.
+Posts one item a day to ProQen's Instagram (~7:15 PM IST, with 8:03 and 8:49 PM backup runs) via GitHub Actions.
 
 - `content/posts.json`: post content (source of truth). Each post: `id` (p001, p002, …), `slides`, `caption`.
 - `render/render.py`: renders slides to `queue/<id>/<n>.jpg` (1080×1350 JPEG) and writes `queue/manifest.json`.
