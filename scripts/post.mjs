@@ -15,6 +15,7 @@ const FORCE = process.env.FORCE === "true";
 const DRY = process.env.DRY_RUN === "true";
 
 if (!USER || !TOKEN) fail("Missing IG_USER_ID or IG_ACCESS_TOKEN secret.");
+console.log(`::add-mask::${TOKEN}`);
 console.log(`Token looks like: starts with "${TOKEN.slice(0, 4)}…", ${TOKEN.length} characters. User ID has ${USER.length} digits.`);
 if (TOKEN.startsWith("EAA")) fail("IG_ACCESS_TOKEN is a Facebook token (starts with EAA). Generate the token under Instagram API > 'API setup with Instagram login' > 'Generate access tokens' instead; that one starts with IG.");
 
@@ -22,7 +23,7 @@ const manifest = JSON.parse(readFileSync("queue/manifest.json", "utf8"));
 const state = JSON.parse(readFileSync("state/posted.json", "utf8"));
 const todayIST = new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10);
 
-function fail(msg) { console.log("::error title=Instagram post failed::" + msg.replace(/\n/g, " ")); process.exit(1); }
+function fail(msg) { msg = String(msg); if (TOKEN) msg = msg.replaceAll(TOKEN, "***"); console.log("::error title=Instagram post failed::" + msg.replace(/\n/g, " ")); process.exit(1); }
 function warn(msg) { console.log("::warning::" + msg); }
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const imgUrl = (p) => `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${p}`;
@@ -55,11 +56,18 @@ async function refreshToken() {
   if (!j.access_token) { warn("Token refresh failed: " + JSON.stringify(j.error || j)); return; }
   console.log(`🔑 Token refreshed, valid ~${Math.round(j.expires_in / 86400)} more days.`);
   if (j.access_token !== TOKEN) {
+    console.log(`::add-mask::${j.access_token}`);
     TOKEN = j.access_token;
     if (process.env.GH_PAT) {
-      execFileSync("gh", ["secret", "set", "IG_ACCESS_TOKEN", "--repo", REPO, "--body", TOKEN],
-        { env: { ...process.env, GH_TOKEN: process.env.GH_PAT }, stdio: "inherit" });
-      console.log("🔑 Saved new token to repo secret.");
+      try {
+        // token goes in via stdin, never on the command line (command lines can end up in logs)
+        execFileSync("gh", ["secret", "set", "IG_ACCESS_TOKEN", "--repo", REPO], {
+          input: TOKEN, env: { ...process.env, GH_TOKEN: process.env.GH_PAT }, stdio: ["pipe", "ignore", "pipe"] });
+        console.log("🔑 Saved new token to repo secret.");
+      } catch (err) {
+        const why = String(err.stderr || "").replaceAll(TOKEN, "***").split("\n")[0];
+        warn("Couldn't save the refreshed token (GH_PAT needs 'Secrets: Read and write' on this repo): " + why);
+      }
     } else {
       warn("Instagram issued a new token string but GH_PAT isn't set, so it can't be saved. Update IG_ACCESS_TOKEN manually within 60 days.");
     }
