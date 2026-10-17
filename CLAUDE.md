@@ -19,7 +19,7 @@ Posts one item a day to ProQen's Instagram (~7:15 PM IST, with 8:03 and 8:49 PM 
 
 ## Content rules
 
-- Audience: owners of restaurants, cafés, shops/kirana, hotels/homestays, clinics, schools and small businesses in India.
+- Audience: owners of restaurants, cafés, shops/grocery stores, hotels/homestays, clinics, schools and small businesses in India.
 - ProQen services: websites & web apps, mobile apps, ERP/CRM & dashboards, e-commerce, POS & billing (offline, GST, KOT),
   hotel & hospitality (booking engine, room QR codes, front-desk apps), AI & WhatsApp automation, UI/UX design.
 - Facts you may use: Noida, India; WhatsApp +91 94531 26836; support@proqen.com; proqen.com; fixed quote before starting;
@@ -37,8 +37,8 @@ Posts one item a day to ProQen's Instagram (~7:15 PM IST, with 8:03 and 8:49 PM 
   the rest can be tips/educational, always ending with how ProQen helps.
 - Service priority: 1) websites & mobile/web apps, 2) POS & billing, 3) custom software (ERP/CRM/dashboards/internal tools),
   4) AI & WhatsApp automation. Hotel software, e-commerce and UI/UX appear less often.
-- Language: English + Hinglish. Hinglish hook in titles/first caption line ("Google pe search kiya… aapka business dikha?",
-  "Internet gaya? Billing chalu."), clear English for details. Indian context: GST, UPI, KOT, udhaar, kirana, WhatsApp, ₹.
+- ENGLISH ONLY, in slides and captions. No Hindi or Hinglish words.
+- Indian context (in English): GST, UPI, KOT, customer credit, grocery stores, WhatsApp, ₹.
 
 ## Layouts (see render.py)
 
