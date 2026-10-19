@@ -21,7 +21,9 @@ if (TOKEN.startsWith("EAA")) fail("IG_ACCESS_TOKEN is a Facebook token (starts w
 
 const manifest = JSON.parse(readFileSync("queue/manifest.json", "utf8"));
 const state = JSON.parse(readFileSync("state/posted.json", "utf8"));
-const todayIST = new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10);
+// "Posting day" in IST, rolling over at 6 AM instead of midnight, so a run delayed past midnight
+// still counts for the evening it belongs to (and doesn't block the next evening's post).
+const todayIST = new Date(Date.now() + (5.5 - 6) * 3600e3).toISOString().slice(0, 10);
 
 function fail(msg) { msg = String(msg); if (TOKEN) msg = msg.replaceAll(TOKEN, "***"); console.log("::error title=Instagram post failed::" + msg.replace(/\n/g, " ")); process.exit(1); }
 function warn(msg) { console.log("::warning::" + msg); }
