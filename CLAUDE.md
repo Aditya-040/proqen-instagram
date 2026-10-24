@@ -7,7 +7,12 @@ which starts the workflow. GitHub cron runs are only a late backup. Posting day 
 - `render/render.py`: renders slides to `queue/<id>/<n>.jpg` (1080×1350 JPEG) and writes `queue/manifest.json`.
   Run: `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers python3 render/render.py` (only renders posts without images).
 - `scripts/post.mjs` + `.github/workflows/post.yml`: posts the next item not yet in `state/posted.json`.
-- Never edit `state/posted.json` by hand, and never change or re-render posts that are already posted.
+- `scripts/post-x.mjs`: runs right after, mirrors the post Instagram just published to X (same images; carousels over
+  4 slides continue as a reply thread). State in `state/x-posted.json`. Needs secrets X_API_KEY, X_API_SECRET,
+  X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET; skips with a warning if they're missing. X text = optional `x_text` on a post
+  in `content/posts.json` (≤ 280 chars, emoji count as 2, no links), otherwise auto-shortened from the caption.
+  No URLs in X text by default: X charges far more per post with a link (repo variable X_INCLUDE_LINK=true overrides).
+- Never edit `state/posted.json` or `state/x-posted.json` by hand, and never change or re-render posts that are already posted.
 
 ## Weekly refill (what the scheduled task does)
 

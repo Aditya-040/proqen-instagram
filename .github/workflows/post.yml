@@ -1,4 +1,4 @@
-name: Post to Instagram
+name: Post to Instagram + X
 
 on:
   # Main trigger: a daily Claude scheduled task (7:15 PM IST) pushes trigger/request.txt.
@@ -45,10 +45,23 @@ jobs:
           FORCE: ${{ inputs.force }}
           DRY_RUN: ${{ inputs.dry_run }}
         run: node scripts/post.mjs
+      - name: Mirror the post to X
+        # Runs even if Instagram failed (it mirrors whatever Instagram posted last, at most once),
+        # and an X problem never fails the Instagram run.
+        if: always()
+        continue-on-error: true
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          X_INCLUDE_LINK: ${{ vars.X_INCLUDE_LINK }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: node scripts/post-x.mjs
       - name: Save posting state
         if: always()
         run: |
           git config user.name "proqen-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state/posted.json
+          git add state/posted.json state/x-posted.json 2>/dev/null || git add state/posted.json
           git diff --cached --quiet || (git commit -m "Posted $(date -u +%F)" && git push)
