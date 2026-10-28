@@ -916,5 +916,63 @@
       }
     ],
     "caption": "The festive rush is here, and you can't be at every counter at once. 📱\n\nAn owner dashboard app shows you what's happening in your business, live, from anywhere:\n📊 Today's sales, UPI and cash totals\n📦 Low-stock alerts before bestsellers run out\n🧾 Pending customer dues in one list\n🏬 Every counter and branch in one view\n\nProQen builds custom dashboards and mobile apps that connect to your billing, stock and accounts. Fixed quote before we start, and you own the source code.\n\n💬 Comment \"DASHBOARD\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\n#businessdashboard #mobileapp #appdevelopment #customsoftware #posystem #retailindia #smallbusinessindia #festiveseason #msme #proqen"
+  },
+  {
+    "id": "p020",
+    "slides": [
+      {
+        "layout": "cover",
+        "kicker": "Before you hire a developer",
+        "title": "5 questions to answer *before* you build an app",
+        "sub": "Clear answers mean a fixed quote, a faster build and no surprises. Swipe."
+      },
+      {
+        "layout": "point",
+        "num": "01",
+        "title": "What problem should it solve?",
+        "body": "\"We need an app\" is not a goal. \"Customers can't book a table after 10 PM\" is.",
+        "tip_label": "Tip →",
+        "tip": "Write the problem in one sentence."
+      },
+      {
+        "layout": "point",
+        "num": "02",
+        "title": "Who will use it, and where?",
+        "body": "Customers on phones, staff at the counter or you on a laptop? Each needs a different screen.",
+        "tip_label": "Tip →",
+        "tip": "List every type of user."
+      },
+      {
+        "layout": "point",
+        "num": "03",
+        "title": "What must it do on day one?",
+        "body": "Pick the few features you can't launch without. Everything else can come in phase two.",
+        "tip_label": "Tip →",
+        "tip": "Must-have list first, wish list later."
+      },
+      {
+        "layout": "point",
+        "num": "04",
+        "title": "What should it connect to?",
+        "body": "Your billing, stock, GST invoices, UPI payments or WhatsApp. Plan the links up front.",
+        "tip_label": "Tip →",
+        "tip": "Note the tools you already use."
+      },
+      {
+        "layout": "point",
+        "num": "05",
+        "title": "Who owns the code?",
+        "body": "If the developer leaves, can someone else take over? Without the source code, you're stuck.",
+        "tip_label": "Tip →",
+        "tip": "Get code ownership in writing."
+      },
+      {
+        "layout": "cta",
+        "kicker": "ProQen apps & websites",
+        "title": "Not sure yet? *Let's work it out.*",
+        "sub": "Our 2–3 day Discover step answers all five with you. Then you get a fixed quote."
+      }
+    ],
+    "caption": "Most app projects go wrong before a single line of code is written. 🤔\n\n5 questions to answer before you hire anyone to build your app or website:\n1️⃣ What problem should it solve?\n2️⃣ Who will use it, and where?\n3️⃣ What must it do on day one?\n4️⃣ What should it connect to (billing, stock, UPI, WhatsApp)?\n5️⃣ Who owns the source code?\n\nDon't have all the answers yet? That's normal. ProQen starts every project with a 2–3 day Discover step where we work them out with you. Then you get a fixed quote before we start, weekly demos while we build, and you own the source code.\n\nWe build websites, web apps and mobile apps for restaurants, shops, clinics, hotels, schools and growing businesses.\n\n💬 Comment \"APP\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\n#appdevelopment #mobileapp #webdevelopment #customsoftware #startupindia #smallbusinessindia #msme #businesstips #noida #proqen"
   }
 ]
