@@ -57,3 +57,11 @@ which starts the workflow. GitHub cron runs are only a late backup. Posting day 
 - `point.num` may be an emoji instead of a number.
 - `*word*` in titles = yellow highlight. Carousels: cover + 4–5 points + cta (max 10 slides).
 - Keep titles ≤ ~45 characters for point slides and body ≤ ~140 characters.
+
+## Scheduled specials (Reels)
+
+- `specials/specials.json` + `specials/<id>/reel.mp4`: one-off Reels posted at a chosen time, separate from the daily queue.
+- `scripts/post-reel.mjs` + `.github/workflows/post-special.yml`: posts the special whose id is the last word of
+  `trigger-special/request.txt` (pushed by a one-time Claude scheduled task), then mirrors it to X as a video.
+  State in `state/specials-posted.json`. Never touches `state/posted.json`, so the daily post still goes out.
+- Keep reel files under ~50 MB (re-encode with CRF ~21, faststart). Captions follow the same English-only rule.

@@ -1,0 +1,51 @@
+name: Post special reel (Instagram + X)
+
+# Separate from the daily image poster. A one-time Claude scheduled task pushes trigger-special/request.txt
+# (last word = the special's id from specials/specials.json) at the chosen time, which starts this workflow.
+on:
+  push:
+    branches: [main]
+    paths: ["trigger-special/**"]
+  workflow_dispatch:
+    inputs:
+      reel_id:
+        description: "Special id to post (e.g. r001)"
+        required: true
+      dry_run:
+        description: "Dry run (don't post)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Publish reel
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          REEL_ID: ${{ inputs.reel_id }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: node scripts/post-reel.mjs
+      - name: Save posting state
+        if: always()
+        run: |
+          git config user.name "proqen-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/specials-posted.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Posted special $(date -u +%F)" && git pull --rebase && git push)
