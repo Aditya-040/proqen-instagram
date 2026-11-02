@@ -153,14 +153,14 @@ def L_site(s, i, n):
   <div style="padding:40px 44px;background:linear-gradient(135deg,#FFF4E6,#FFE3EC)">
    <div style="font:600 20px I;color:#B4235A;letter-spacing:.1em">{e(s['site_kicker'])}</div>
    <div style="font:800 52px/1.05 D;letter-spacing:-.02em;margin-top:12px;max-width:560px">{e(s['site_title'])}</div>
-   <div style="display:flex;gap:14px;margin-top:26px"><span style="background:#B4235A;color:#fff;border-radius:14px;padding:14px 24px;font:700 22px I">Order now</span>
+   <div style="display:flex;gap:14px;margin-top:26px"><span style="background:#B4235A;color:#fff;border-radius:14px;padding:14px 24px;font:700 22px I">{e(s.get('site_cta','Order now'))}</span>
    <span style="background:#fff;border-radius:14px;padding:14px 24px;font:700 22px I">💬 WhatsApp</span></div></div>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:26px 44px 34px">
    {''.join(f'<div style="background:#F5F3EE;border-radius:16px;padding:18px;font:600 21px I">{e(x)}</div>' for x in s['site_items'])}</div>
  </div>
  <div class="mock" style="position:absolute;right:0;top:110px;width:270px;height:500px;border-radius:40px;border:10px solid #111;overflow:hidden;background:linear-gradient(180deg,#FFF4E6,#fff)">
   <div style="padding:46px 22px 0;font:800 30px/1.1 D">{e(s['site_title'])}</div>
-  <div style="margin:20px 22px;background:#B4235A;color:#fff;border-radius:14px;padding:12px;text-align:center;font:700 20px I">Order now</div>
+  <div style="margin:20px 22px;background:#B4235A;color:#fff;border-radius:14px;padding:12px;text-align:center;font:700 20px I">{e(s.get('site_cta','Order now'))}</div>
   <div style="margin:0 22px;display:grid;gap:10px">{''.join(f'<div style="background:#F5F3EE;border-radius:12px;padding:12px;font:600 18px I">{e(x)}</div>' for x in s['site_items'])}</div>
  </div>
 </div>
