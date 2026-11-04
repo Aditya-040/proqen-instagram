@@ -172,6 +172,7 @@ def L_app(s, i, n):
     """Phone mockup of a customer app, copy on the left."""
     rows = "".join(f'<div style="display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:18px;padding:16px 18px;font:600 21px I">'
                    f'<span>{e(a)}</span><span style="color:var(--acc)">{e(b)}</span></div>' for a, b in s["app_rows"])
+    nav = s.get("app_nav", ["Home", "Orders", "Offers", "Profile"])
     inner = f"""<div style="display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;flex:1">
 <div><span class="kick">{e(s.get('kicker',''))}</span><h2 style="font-size:74px">{rich(s['title'])}</h2>
 <p class="sub" style="font-size:33px">{rich(s.get('sub',''))}</p>
@@ -183,7 +184,7 @@ def L_app(s, i, n):
   <div style="font:500 19px I;opacity:.8">{e(s['app_card_label'])}</div><div style="font:800 34px D;margin-top:6px">{e(s['app_card_value'])}</div>
   <div style="height:10px;background:rgba(255,255,255,.25);border-radius:9px;margin-top:16px"><div style="width:68%;height:10px;background:var(--hi);border-radius:9px"></div></div></div>
  {rows}
- <div style="margin-top:auto;display:flex;justify-content:space-around;font:600 17px I;color:var(--mut)"><span style="color:var(--acc)">● Home</span><span>Orders</span><span>Offers</span><span>Profile</span></div>
+ <div style="margin-top:auto;display:flex;justify-content:space-around;font:600 17px I;color:var(--mut)"><span style="color:var(--acc)">● {e(nav[0])}</span>{''.join(f'<span>{e(x)}</span>' for x in nav[1:])}</div>
 </div></div>"""
     return frame("dark", i, n, inner)
 

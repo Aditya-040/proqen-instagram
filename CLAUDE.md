@@ -53,7 +53,7 @@ which starts the workflow. GitHub cron runs are only a late backup. Posting day 
 - `pos` {kicker, title, sub, tags, lines:[[item,amt]], total} · `chat` {kicker, title, chat:[[me|them,text] | ["buttons",[..]]], sub}
 - `grid` {kicker, title, items:[[emoji,title,desc]] (4–8), sub?, theme?} · `flow` {kicker, title, flow:[[emoji,title,desc]] (≤5), sub}
 - `site` {kicker, title, domain, site_kicker, site_title, site_items:[3], tags, site_cta?} (website mockup; site_cta = button text, default "Order now")
-- `app` {kicker, title, sub, tags, app_hello, app_title, app_card_label, app_card_value, app_rows:[[a,b]] (4)} (phone mockup)
+- `app` {kicker, title, sub, tags, app_hello, app_title, app_card_label, app_card_value, app_rows:[[a,b]] (4), app_nav?:[4]} (phone mockup; app_nav default Home/Orders/Offers/Profile)
 - `point.num` may be an emoji instead of a number.
 - `*word*` in titles = yellow highlight. Carousels: cover + 4–5 points + cta (max 10 slides).
 - Keep titles ≤ ~45 characters for point slides and body ≤ ~140 characters.
