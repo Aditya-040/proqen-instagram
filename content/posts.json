@@ -1671,5 +1671,100 @@
       }
     ],
     "caption": "Your regulars already message their grocery list on WhatsApp. What if they could order from your own app in one tap? 🛒\n\nA grocery store app built by ProQen lets your customers:\n🔁 Reorder their usual list in one tap\n🥛 Subscribe to daily milk, bread and eggs\n💳 Pay by UPI, card or cash on delivery\n🚚 Pick a delivery slot and track it\n📒 See their credit balance, so month-end settling is easy\n\nAnd you get every order in one dashboard, with stock and GST bills linked to your POS.\n\nThe app shown is a sample design, not a real client.\n\nApps go live in 6–12 weeks. Fixed quote before we start, and you own the source code.\n\n💬 Comment \"GROCERY\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\n#grocerystore #localbusiness #groceryapp #mobileapp #appdevelopment #retailbusiness #homedelivery #smallbusinessindia #noida #proqen"
+  },
+  {
+    "id": "p036",
+    "slides": [
+      {
+        "layout": "cover",
+        "kicker": "Websites for local businesses",
+        "title": "Is an Instagram page *enough?*",
+        "sub": "5 things only your own website can do for your business. Swipe."
+      },
+      {
+        "layout": "point",
+        "num": "01",
+        "title": "Show up when people search",
+        "body": "Customers search Google for \"café near me\" or \"clinic in Noida\". A website helps you appear there, not just on Instagram.",
+        "tip_label": "Tip →",
+        "tip": "Link it to your Google profile."
+      },
+      {
+        "layout": "point",
+        "num": "02",
+        "title": "Take orders and bookings 24/7",
+        "body": "Orders, table bookings and appointments come in while you sleep, without replying to every DM by hand.",
+        "tip_label": "Result →",
+        "tip": "Fewer missed customers."
+      },
+      {
+        "layout": "point",
+        "num": "03",
+        "title": "Stay yours, whatever happens",
+        "body": "Accounts get hacked and reach drops. Your website and domain belong to you, and nobody can switch them off.",
+        "tip_label": "Plus →",
+        "tip": "You own the source code."
+      },
+      {
+        "layout": "point",
+        "num": "04",
+        "title": "Answer questions in one place",
+        "body": "Menu, prices, timings, location and photos on one clear page, instead of buried in old posts and stories.",
+        "tip_label": "Result →",
+        "tip": "Fewer \"what time do you open?\" calls."
+      },
+      {
+        "layout": "point",
+        "num": "05",
+        "title": "Look like a serious business",
+        "body": "Your own domain, a business email and a clean site build trust before a customer ever walks in.",
+        "tip_label": "Tip →",
+        "tip": "Keep Instagram, link it to the site."
+      },
+      {
+        "layout": "cta",
+        "kicker": "ProQen websites",
+        "title": "Instagram brings them in. *Your website closes.*",
+        "sub": "Websites for restaurants, shops, clinics, schools and hotels. Live in 2–4 weeks."
+      }
+    ],
+    "caption": "Your Instagram page is great for being seen. But is it enough to run your business online? 📱\n\n5 things only your own website can do:\n1️⃣ Help you show up when people search Google for a business like yours\n2️⃣ Take orders, bookings and appointments 24/7, without manual DMs\n3️⃣ Stay yours, with your own domain and source code, even if an account gets hacked\n4️⃣ Put your menu, prices, timings and location in one clear place\n5️⃣ Build trust with a proper domain and business email\n\nKeep posting on Instagram, and send people to a website that turns interest into orders.\n\nProQen builds websites and web apps for restaurants, cafés, shops, clinics, schools and hotels across India. Most websites go live in 2–4 weeks, with a fixed quote before we start.\n\n💬 Comment \"WEBSITE\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\n#websitedesign #smallbusinessindia #localbusiness #webdevelopment #restaurantindia #cafeowners #msme #businessowners #noida #proqen"
+  },
+  {
+    "id": "p037",
+    "slides": [
+      {
+        "layout": "chat",
+        "kicker": "WhatsApp ordering for restaurants",
+        "title": "Saturday orders on WhatsApp, *handled.*",
+        "chat": [
+          [
+            "me",
+            "Hi, I'd like to order dinner for 4"
+          ],
+          [
+            "them",
+            "Hello! 👋 Here's tonight's menu. Pick your dishes:"
+          ],
+          [
+            "buttons",
+            [
+              "View menu",
+              "Repeat last order"
+            ]
+          ],
+          [
+            "me",
+            "Repeat last order"
+          ],
+          [
+            "them",
+            "Done ✓ Total ₹1,180. Pay by UPI and it reaches you by 8:30 PM 🛵"
+          ]
+        ],
+        "sub": "A WhatsApp assistant takes the order, shares a UPI link and sends a KOT to your kitchen."
+      }
+    ],
+    "caption": "Saturday night, the phone is buzzing and WhatsApp orders are piling up. Who's replying to all of them? 💬\n\nA WhatsApp ordering assistant built by ProQen can:\n📋 Share your menu the moment a customer says hi\n🔁 Let regulars repeat their last order in one tap\n💳 Send a UPI link and confirm payment automatically\n👨‍🍳 Push every order straight to your kitchen as a KOT\n🧾 Add it to your POS with a GST bill\n\nYour staff stop typing replies and get back to cooking and serving.\n\nThe chat shown is an example, not a real customer.\n\nFixed quote before we start, and you own the source code.\n\n💬 Comment \"ORDER\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\n#whatsappautomation #whatsappbusiness #restaurantindia #cloudkitchen #onlineordering #aiautomation #restaurantpos #smallbusinessindia #foodbusiness #proqen"
   }
 ]
