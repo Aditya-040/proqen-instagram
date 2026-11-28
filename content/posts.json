@@ -2417,5 +2417,42 @@
       }
     ],
     "caption": "Thinking about new billing software before the new year? Ask these 5 questions before you pay for anything. 🧾\n\n1️⃣ Does it keep billing when the internet drops?\n2️⃣ Are the GST invoices and reports correct?\n3️⃣ Does it fit your counter: KOT, barcodes, customer credit?\n4️⃣ Do UPI payments and stock update with every sale?\n5️⃣ Can you export your data, and who supports you when it breaks?\n\nProQen builds POS and billing systems for restaurants, cafés, grocery stores and shops across India, with offline mode, GST billing, KOT, UPI and stock built in, shaped around how your counter actually works.\n\nFixed quote before we start, and you own the source code.\n\n💬 Comment \"POS\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\n#posindia #billingsoftware #gstbilling #restaurantpos #grocerystore #retailindia #upi #kot #smallbusinessindia #proqen"
+  },
+  {
+    "id": "p051",
+    "slides": [
+      {
+        "layout": "chat",
+        "kicker": "WhatsApp booking for hotels & homestays",
+        "title": "Holiday enquiries, *answered 24×7.*",
+        "chat": [
+          [
+            "me",
+            "Hi, any room for 2 from 24 to 26 Dec?"
+          ],
+          [
+            "them",
+            "Hello! 👋 Yes, rooms are free on those dates. Pick one:"
+          ],
+          [
+            "buttons",
+            [
+              "Deluxe room",
+              "Family room"
+            ]
+          ],
+          [
+            "me",
+            "Deluxe room"
+          ],
+          [
+            "them",
+            "Great choice ✓ Pay the advance by UPI and your booking is confirmed 📄"
+          ]
+        ],
+        "sub": "A WhatsApp assistant that checks live availability, takes the advance and confirms the booking, even at 2 AM."
+      }
+    ],
+    "caption": "Christmas and New Year enquiries are pouring in. How many are you missing while you sleep? 🏨\n\nGuests planning a holiday message five places at once. The one that replies first usually gets the booking. A WhatsApp booking assistant built by ProQen can:\n📅 Check live room availability the moment a guest asks\n🛏️ Show room types, photos and house rules\n💳 Send a UPI link to collect the advance\n✅ Confirm the booking and update your calendar automatically\n🔔 Send check-in details and reminders before arrival\n\nYou wake up to confirmed bookings, not unanswered chats.\n\nThe chat shown is an example, not a real guest.\n\nFixed quote before we start, and you own the source code.\n\n💬 Comment \"BOOKING\" or WhatsApp +91 94531 26836\n🌐 proqen.com\n\n#hotelindia #homestay #whatsappautomation #whatsappbot #hotelbooking #hospitalityindia #aiautomation #holidayseason #smallbusinessindia #proqen"
   }
 ]
